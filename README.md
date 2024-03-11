@@ -1,4 +1,4 @@
-
+![image](https://github.com/gabrieldp36/airbnb-clone-site/assets/88417383/7fb931de-2a1c-43c5-b7fe-519014175bec)
 
 # Clone Airbnb.
 
@@ -13,5 +13,5 @@ Se incorporó gestión de formatos de imágenes (avif, webp y jpg) en base a la 
 Para visitar la web pueden hacer click en el siguiente link:
 
 ```
-
+https://clone-air-site.netlify.app/
 ```
