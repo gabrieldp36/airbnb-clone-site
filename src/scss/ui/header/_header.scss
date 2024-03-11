@@ -1,0 +1,40 @@
+@use 'base/variables' as v ;
+@use 'base/mixins'  as m;
+
+/*******Background Image Header********/
+.notavif.notwebp .header {
+    background-image: url('../assets/img/header.jpg');
+}
+
+.webp .header {
+    background-image: url('../assets/img/header.webp');
+}
+
+.avif .header {
+    background-image: url('../assets/img/header.avif');
+}
+
+.header {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 5rem 0 15rem 0;
+
+    &__busqueda {
+        margin-top: 5rem;
+        text-align: center;
+        color: v.$blanco;
+
+        @include m.tablet {
+            margin-top: 10rem;
+        }
+        
+        @include m.desktop {
+            margin-top: 20rem;
+        }
+    }
+
+    &__busqueda-boton {
+        @include m.boton(v.$blanco, v.$primario);
+    }
+}

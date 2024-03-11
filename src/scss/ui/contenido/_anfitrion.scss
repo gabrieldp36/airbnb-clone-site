@@ -1,0 +1,92 @@
+@use 'base/variables' as v ;
+@use 'base/mixins'  as m;
+
+/*******Background Image Anfitrion********/
+.notavif.notwebp .anfitrion {
+    background-image: linear-gradient(to bottom, v.$negro 0%, v.$negro 50%, transparent 50% ), url('../assets/img/anfitrion.jpg');
+    @include m.tablet {
+        background-image: linear-gradient(to right, v.$negro 0%, v.$negro 45%, transparent 55% ), url('../assets/img/anfitrion.jpg');
+    }
+}
+
+.webp .anfitrion {
+    background-image: linear-gradient(to bottom, v.$negro 0%, v.$negro 50%, transparent 50% ), url('../assets/img/anfitrion.webp');
+    @include m.tablet {
+        background-image: linear-gradient(to right, v.$negro 0%, v.$negro 45%, transparent 55% ), url('../assets/img/anfitrion.webp');
+    }
+}
+
+.avif .anfitrion {
+    background-image: linear-gradient(to bottom, v.$negro 0%, v.$negro 50%, transparent 50% ), url('../assets/img/anfitrion.avif');
+    @include m.tablet {
+        background-image: linear-gradient(to right, v.$negro 0%, v.$negro 45%, transparent 55% ), url('../assets/img/anfitrion.avif');
+    }
+}
+
+.anfitrion {
+    margin-top: 2rem;
+    color: v.$blanco;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 10rem;
+    padding: 5rem;
+    background-size: 100%, 60rem;
+    background-position: center, center bottom;
+    background-repeat: no-repeat;
+
+    @media(min-width: 360px) {
+        row-gap: 9rem;
+        background-position: center, 65% 100%;
+    } 
+
+    @media(min-width: 390px) {
+        row-gap: 10rem;
+        background-position: center, 65% 105%;
+    } 
+
+    @include m.telefono {
+        background-size: 100%, 70rem;
+        background-position: center, center 200%;
+    }
+
+    @include m.tablet {
+        grid-template-rows: unset;
+        background-size: 100%, auto;
+        background-position: center, 38% 30%;
+        padding: 15rem 5rem;
+        min-height: 62rem;
+    }
+
+    @include m.desktop {
+        width: 90%;
+        max-width: 1200px;
+        margin: 3rem auto 0 auto;
+        background-position: center, right 30%;
+        border-radius: 2rem;
+    }
+
+    &__contenido {
+        @include m.tablet {
+            max-width: 45%;
+        }
+        @include m.desktop {
+            max-width: 50%;
+        }
+    }
+
+    &__heading {
+        line-height: 1.4;
+    }
+
+    &__texto {
+        color: v.$blanco;
+        margin-bottom: 3rem;
+    }
+
+    &__enlace {
+        @include m.boton(v.$blanco, v.$negro);
+        border-radius: 1rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+}
