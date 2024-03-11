@@ -1,4 +1,4 @@
-![image](https://github.com/gabrieldp36/airbnb-clone-site/assets/88417383/7fb931de-2a1c-43c5-b7fe-519014175bec)
+![portada](https://github.com/gabrieldp36/airbnb-clone-site/assets/88417383/8764099b-f551-4158-bbea-c67828de2008)
 
 # Clone Airbnb.
 
