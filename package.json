@@ -1,12 +1,12 @@
 {
-  "name": "cafeteria",
+  "name": "clone-airbnb",
   "version": "1.0.0",
-  "description": "Delivery App, BEM, SASS, Gulp, CSS Grid",
+  "description": "Clone sitio airbnb",
   "main": "index.js",
   "scripts": {
     "dev": "gulp"
   },
-  "author": "Juan De la torre @codigoconjuan",
+  "author": "Gabriel Domínguez Prado",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.4.17",
