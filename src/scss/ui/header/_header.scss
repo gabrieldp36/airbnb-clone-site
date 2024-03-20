@@ -32,6 +32,10 @@
         @include m.desktop {
             margin-top: 20rem;
         }
+
+        @include m.desktopFHD {
+            margin-top: 45rem;
+        }
     }
 
     &__busqueda-boton {

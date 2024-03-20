@@ -19,6 +19,11 @@
     }
 }
 
+@mixin desktopFHD {
+    @media (min-width: v.$desktopFHD) {
+        @content;
+    }
+}
 
 @mixin boton($bgColor, $colorTexto) {
     background-color: $bgColor;
